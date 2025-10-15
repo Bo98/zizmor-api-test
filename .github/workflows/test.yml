@@ -15,5 +15,5 @@ jobs:
           cask: false
       - run: brew install zizmor
       - run: gh api rate_limit
-      - run: cd $(brew --repo homebrew/core) && zizmor . --verbose || true
+      - run: cd $(brew --repo homebrew/core) && zizmor . -vv || true
       - run: gh api rate_limit
